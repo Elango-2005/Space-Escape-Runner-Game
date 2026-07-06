@@ -1,90 +1,44 @@
-<<<<<<< HEAD
-# Welcome to your Expo app 👋
+# 🚀 Space Escape Runner
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A fun and engaging **2D arcade space survival game** built with **React Native**, **Expo**, and **TypeScript**. Navigate your spaceship through an endless asteroid field, survive as long as possible, and beat your highest score.
 
-## Get started
+---
 
-1. Install dependencies
+## 📸 Preview
 
-   ```bash
-   npm install
-   ```
+> Add gameplay screenshots or a GIF here.
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-=======
-# Space-Escape-Runner-Game
-
-# 🚀 Space Escape
-
-**Space Escape** is an action-packed arcade survival game where players pilot a spaceship to dodge an accelerating barrage of asteroids. Built with React Native & Expo, it features polished animations, dynamic difficulty, and custom audio for a AAA feel. Test your reflexes, manage your 3 lives, and beat your high score in quick, addictive play sessions!
-
-![Space Escape Gameplay](https://via.placeholder.com/800x400?text=Insert+Gameplay+Screenshot+Here)
+![Gameplay](https://via.placeholder.com/900x450?text=Gameplay+Screenshot)
 
 ---
 
 ## ✨ Features
 
-*   **🕹️ Classic Arcade Survival:** Dodge randomly generated falling asteroids to rack up points.
-*   **📈 Dynamic Difficulty:** The speed of the falling meteors increases for every 30 points you score.
-*   **❤️ Lives & Invincibility:** Start with 3 lives. Taking a hit triggers a particle explosion and grants a 2-second invincibility blink to recover.
-*   **💾 Persistent Data:** High scores and audio preferences (Music/SFX toggles) are saved locally using `AsyncStorage`.
-*   **🎵 Custom Audio Engine:** Integrated with the modern `expo-audio` package for seamless background music loops and crisp crash sound effects.
-*   **🎨 AAA UI & Animations:** Built completely with React Native's `Animated` API—featuring a hovering title, flickering engine flames, and dynamic gradient space backgrounds.
+- 🚀 Smooth spaceship movement
+- ☄️ Randomly generated falling asteroids
+- 📈 Dynamic difficulty that increases as your score grows
+- ❤️ Three-life system with temporary invincibility after collisions
+- 💥 Crash animations and visual effects
+- 🎵 Background music and sound effects
+- 💾 Persistent high score using AsyncStorage
+- ⚙️ Audio settings (Music & Sound toggle)
+- 🎨 Modern game UI with animated effects
+- 📱 Optimized for Android devices
 
 ---
 
 ## 🛠️ Tech Stack
 
-*   **Framework:** [React Native](https://reactnative.dev/) & [Expo](https://expo.dev/) (SDK 52+)
-*   **Language:** TypeScript
-*   **Routing:** Expo Router
-*   **Storage:** `@react-native-async-storage/async-storage`
-*   **Audio:** `expo-audio` & `expo-asset`
-*   **Styling & UI:** `expo-linear-gradient`, `@expo/vector-icons`, `@expo-google-fonts/baloo-2`
+| Technology | Purpose |
+|------------|---------|
+| React Native | Mobile App Development |
+| Expo | Development Platform |
+| TypeScript | Programming Language |
+| Expo Router | Navigation |
+| AsyncStorage | Local Data Storage |
+| Expo Audio | Background Music & Sound Effects |
+| Expo Linear Gradient | UI Effects |
+| React Native Animated API | Game Animations |
 
 ---
 
@@ -92,16 +46,141 @@ Join our community of developers creating universal apps.
 
 ```text
 SpaceEscapeRunner/
+│
 ├── assets/
 │   ├── audio/
-│   │   ├── bgm.mp3      # Background music loop
-│   │   └── crash.mp3    # Asteroid collision SFX
+│   │   ├── bgm.mp3
+│   │   └── crash.mp3
+│   │
 │   ├── images/
+│   │
 │   └── icon.png
+│
 ├── src/
-│   └── app/
-│       └── index.tsx    # Main game logic and UI
-├── app.json             # Expo configuration
-├── package.json         # Dependencies
+│   ├── app/
+│   │   ├── _layout.tsx
+│   │   ├── index.tsx
+│   │   └── explore.tsx
+│   │
+│   ├── components/
+│   ├── constants/
+│   └── hooks/
+│
+├── app.json
+├── eas.json
+├── package.json
+├── tsconfig.json
 └── README.md
->>>>>>> 98229f211b818c190d0138c2ad142fa29a173e5f
+```
+
+---
+
+## 🎮 Gameplay
+
+The objective is simple:
+
+1. Control the spaceship.
+2. Avoid incoming asteroids.
+3. Survive as long as possible.
+4. Increase your score.
+5. Beat your previous high score.
+
+As the score increases, the game becomes progressively more challenging by increasing asteroid speed.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Elango-2005/Space-Escape-Runner-Game.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd Space-Escape-Runner-Game
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npx expo start
+```
+
+---
+
+## 📱 Build APK
+
+Using Expo Application Services (EAS):
+
+```bash
+eas build -p android --profile preview
+```
+
+---
+
+## 📌 Future Improvements
+
+- 🌍 Global Leaderboard
+- 🎯 Multiple Game Modes
+- 🚀 Power-ups
+- 👾 Boss Levels
+- 🌌 Multiple Space Themes
+- 🎵 Additional Soundtracks
+- 🏆 Achievements
+- 📊 Player Statistics
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new feature branch.
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push the branch.
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+**Elango S**
+
+Final Year B.Tech – Artificial Intelligence & Data Science
+
+GitHub: https://github.com/Elango-2005
+
+---
+
+⭐ If you enjoyed this project, don't forget to **star the repository!**
