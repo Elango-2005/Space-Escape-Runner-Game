@@ -4,8 +4,6 @@ A fun and engaging **2D arcade space survival game** built with **React Native**
 
 ---
 
-## 📸 Preview
-
 ## 🎮 Gameplay Preview
 
 [![Gameplay Preview](assets/images/gameplay.png)](https://drive.google.com/file/d/1E1Bn-oHTZOO3skvtaBPlPOie9SJdCc3E/view?usp=sharing)
